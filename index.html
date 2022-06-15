@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falling goo</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <button type="button" id="scroll" onclick="scrollWindow()">&#x2191;</button>
+    <div class="navbar">
+        <div class="nav">
+            <a href="#" class="logo" id="logo"> &lt;SR/&gt; </a>
+            <a href="#scrollProjects" class="nav-item" id="1">Projects</a>
+            <a href="#scrollSkills" class="nav-item" id="2">Skills</a>
+            <a href="#scrollAbout" class="nav-item" id="3">About me</a>
+            <a href="#contact" class="nav-item" id="4">Contact</a>
+        </div>
+    </div>
+    <div class="container" id="container">
+
+    </div>
+    <svg>
+        <defs>
+            <filter id="goo">
+                <feGaussianblur in="SourceGraphic"
+                stdDeviation = '10'/>
+                <feColorMatrix in="name" mode="matrix"
+                values="1 0 0 0 0
+                        0 1 0 0 0
+                        0 0 1 0 0
+                        0 0 0 25 -15"/>
+                <feBlend in="SourceGraphic" />
+            </filter>
+        </defs>
+    </svg>
+
+
+    <!-- Profile Projects part -->
+    <span id="scrollProjects"></span>
+    <div class="projects reveal" id="projects">
+        <h2>My Projects</h2>
+    </div>
+    
+    <!-- Profile Skills -->
+    <span id="scrollSkills"></span>
+    <div class="skills reveal" id="skills">
+        <div class="image-container ">
+            <h2 >Technologies I use</h2>
+            <h3>Front-end Web</h3>
+           <img src="./images/html.png" alt="html">
+           <img src="./images/css.png" alt="css">
+           <img src="./images/js.png" alt="javascript">
+           <img src="./images/jquery.png" alt="jquery">
+           <img src="./images/sass.png" alt="scss">
+           <img src="./images/vue.png" alt="vue3">
+           <img src="./images/bootstrap.png" alt="bootstrap">
+           <h3>Hosting & RTDB & Package</h3>
+           <img src="./images/github.png" alt="github">
+           <img src="./images/netlify.png" alt="netlify">
+           <img src="./images/firebase.png" alt="firebase">
+           <img src="./images/npm.png" alt="npm">
+          <h3>Version Control & Source code management</h3>
+          <img src="./images/git.png" alt="git">
+          <img src="./images/github.png" alt="github">
+          <img src="./images/vscode.png" alt="vscode">
+          <h3>Programming & Coding</h3>
+          <img src="./images/c.png" alt="c">
+          <img src="./images/java.png" alt="java">
+          <img src="./images/python.png" alt="python">
+        </div>
+    </div>
+    <!-- Profile About part -->
+    <span id="scrollAbout"></span>
+    <div class="profile reveal" >
+        <div class="about" id="about">
+            <h2 >A Brief Intro</h2>
+            <p id="intro">I am currently residing in Kolkata, India. I am a freshman in my bachelors majoring in CSE.<span>Thanks to online resources which helped me a lot </span> in improving my skills and introducing me to web-development.<span>I am a self-taught , skilled at front-end and learning more about UI-UX designs.</span>I have plans to learn backend, for becoming full-stack developer.<span>I also try open source contributions! I also love to participate in hackathons.</span>Apart from those technical stuffs, I love to listen to music, read ebooks,sketch and play outdoor games.
+            <span>Download my <a href="#" id="resume">resume</a></span></p>
+            <h3 id="achievements">My Achievements</h3>
+            <p>Here are some of my achievements that I'm proud of : </p>
+            <div class="achievements-ul">
+              
+            </div>
+        </div>
+
+    </div>
+    <div class="contact reveal" id="contact">
+        <h2>Contact Me</h2>
+        <p>If you are looking for getting in touch with me, don't hesitate to fill up the contact form and submit it!</p>
+        <div class="form">
+           
+            <form action="">
+                <label for="name">Name:
+                    <input type="text" required>
+                </label>
+                <label for="email">Email:
+                    <input type="email" required>
+                </label>
+                <label for="area">Text:
+                <textarea name="area" id="area" cols="50" rows="50" placeholder="write your message here"></textarea></label>
+            
+            </form>
+            <button type="submit" id="submit">Submit</button>
+           <div class="icon-holder">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            
+           
+           </div>
+        </div>
+    </div> 
+    <footer><p>
+        No Copyright &copy; My Portfolio All Rights Reserved 2022
+    </p></footer>
+<script src="./script.js"></script>
+</body>
+</html>
