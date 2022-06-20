@@ -1,22 +1,6 @@
 const divContainer = document.getElementById('container');
 divContainer.innerHTML += `
-<h2 id="title">Hi! I'm Suman Roy, junior web developer. I love to create and design awesome web apps</h2>
-<div class="particle" id="particle"></div>
-<div class="particle" id="particle"></div>
-<div class="particle" id="particle"></div>
-<div class="particle" id="particle"></div>
-<div class="particle" id="particle"></div>
-<div class="particle" id="particle"></div>
-<div class="particle" id="particle"></div>
-<div class="particle" id="particle"></div>
-<div class="particle" id="particle"></div>
-<div class="particle" id="particle"></div>
-<div class="particle" id="particle"></div>
-<div class="particle" id="particle"></div>
-<div class="particle" id="particle"></div>
-<div class="particle" id="particle"></div>
-<div class="particle" id="particle"></div>
-<div class="border" id="border"></div>        
+<h2 id="title">Hi! I'm Suman Roy, junior web developer. I love to create and design awesome web apps</h2>    
 </div>
 `
 const projectGallery = document.getElementById('projects')
@@ -198,8 +182,6 @@ function reveal() {
     let reveals = document.querySelectorAll(".reveal");
     for (let i = 0; i < reveals.length; i++) {
         let windowHeight = window.innerHeight;
-        let elementTop = reveals[i].getBoundingClientRect().top;
-        let elementVisible = 200;
         if (elementTop < (windowHeight - elementVisible)) {
             reveals[i].classList.add("active");
         }
@@ -208,4 +190,3 @@ function reveal() {
         }
     }
 }
-window.addEventListener("scroll", reveal);
