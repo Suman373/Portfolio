@@ -2,3 +2,30 @@
 
 # My Portfolio Website
 
+## Author
+
+- [@Suman373](https://www.github.com/Suman373)
+
+### About 
+
+ My simple minimalistic portfolio website.
+
+## Badge [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+
+## Technologies used
+
+![VSCode()](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+
+![Netlify()](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+
+![Html()](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+
+![CSS()](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+![Javascript()](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+
+## Feedback
+
+### If you want to contact me, head to my profile and connect with me via any of the social media platforms!
+
+## Made with Love &#10084;
